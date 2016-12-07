@@ -34,7 +34,7 @@ class Game extends Component {
 
     if (state.inGame) {
       return (
-        <Question number={state.questionNumber} confirmAnswer={actions.confirmAnswer}/>
+        <Question points={state.points} number={state.questionNumber} confirmAnswer={actions.confirmAnswer}/>
       );
     } else {
       return (
